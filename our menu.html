@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+
+    <title>Drinks | Our Menu |costa coffee</title>
+</head>
+<style>
+    /* ================= GENERAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    color: #6b1a34;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3GpYLh3pWMk9q2I0d3DTigwGxhLYXmWgaMCVG-_LHVExTCBFNj5Gq1Kuk&s=10");
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+
+    height: 80px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    background-color: white;
+
+
+}
+
+
+.logo a{
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+    color: #6b351f;
+
+    text-decoration: none;
+}
+
+
+.nav-links {
+
+    display: flex;
+
+    gap: 30px;
+
+    list-style: none;
+}
+
+
+.nav-links a {
+
+    text-decoration: none;
+
+    color: #3b2116;
+
+    font-size: 15px;
+
+    font-weight: bold;
+}
+
+
+.nav-links a:hover {
+
+    color: #9a5735;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+
+    height: 400px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding-left: 10%;
+
+    background-image: url("https://i.pinimg.com/736x/95/06/be/9506be56c6ddb2b1a92198198c61035d.jpg");
+
+    background-size: cover;
+
+}
+
+
+.hero-text {
+
+    max-width: 550px;
+
+    color: white;
+}
+
+
+.hero-text h1 {
+
+    font-size: 55px;
+
+    line-height: 1.1;
+
+    margin-bottom: 20px;
+}
+
+
+.hero-text p {
+
+    font-size: 20px;
+
+    margin-bottom: 30px;
+
+    color:#6b1a34;
+}
+
+
+/* ================= BUTTON ================= */
+
+.button {
+
+    display: inline-block;
+
+    padding: 14px 28px;
+
+    background-color: #591932;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 25px;
+
+    font-weight: bold;
+
+    padding: 20px;
+
+    font-size: 20px;
+
+}
+
+.button a{
+    align-items: center;
+}
+
+.button:hover {
+
+    background-color: #8b2234;
+}
+
+
+.box{
+    background-color: #ac0844;
+    color: white;
+    padding: 18px;
+    font-size: 20px;
+    gap: 20px;
+}
+.box a{
+    color: white;
+    text-decoration: none;
+    justify-content:space-between;
+    gap: 30px;
+}  
+.card{
+    background-color: white;
+    font-size: 14px;
+    height: 500px;
+    border: none;
+
+}
+.card img{
+    height: 200px;
+}
+.row{
+    display: flex;
+    text-align: center;
+    
+}
+.card-title{
+    color: #6b1a34;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+
+    background-color: #28160e;
+
+    color: white;
+
+    padding: 60px 8% 20px;
+    background-color: #ac0844;
+    font-size: 18px;
+}
+
+
+.footer-container {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 50px;
+}
+
+
+.footer-column {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+.footer-column h3 {
+
+    margin-bottom: 10px;
+}
+
+
+.footer-column a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+}
+
+
+.footer-column a:hover {
+
+    color: white;
+}
+
+.footer-container1{
+    background-color: #6b1a34;
+}
+
+.copyright {
+
+    color: white;
+    font-weight: bold;
+}
+
+.copyright-column a{
+    color: white;
+
+    text-decoration: none;
+
+}
+
+</style>
+<body>
+    
+       <!-- ================= NAVBAR ================= -->
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <a href="First webpage.html">Costa Coffee</a>
+        </div>
+
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="our story.html">Our story</a>
+            </li>
+
+            <li>
+                <a href="our menu.html">Our Menu</a>
+            </li>
+
+            <li>
+                <a href="locations.html">Find a Cafe</a>
+            </li>
+
+            <li>
+                <a href="order.html">Order Online</a>
+            </li>
+
+            <li>
+                <a href="sustainability.html">
+                    Sustainability
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="hero-text">
+
+        <h1 style="color: #6b1a34;">
+            <b>Our menu</b>
+        </h1>
+
+        <p>
+            Whatever your diet or preferences, there’s enough <br>choice for everyone.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- nav section -->
+
+<div class="box">
+
+    <div class="row">
+        
+        <div class="col-2"></div>
+        <div class="col-2"><a href="our menu.html">Drinks</a></div>
+        <div class="col-2"><a href="food.html">Food</a></div>
+        <div class="col-2"><a href="Grab items.html">Go and Grab items</a></div>
+        <div class="col-2"></div>
+        <div class="col-2"></div>
+
+    </div>
+</div>
+<br><br>
+
+<!-- HOT BEVERAGE SECTION  -->
+
+<section>
+
+<br><br>
+    <div class="container">
+        <br><br>
+        <h1 align="center">Hot Beverages</h1> <br>
+
+        <!-- ROW 1 -->
+
+        <div class="row">
+            <div class="col-3">
+                <div class="card" style="width: 18rem; height: 22rem;">
+                    <img src="c:\Users\Ahmad computer sdk\Pictures\Screenshots\Screenshot 2026-09-04 101429.png" alt="" class="card"> <br> 
+                    <h3 class="card-title"><b>Cafe latte</b></h3>  
+                    <p class="card-text">Our signature blend espresso with <br>steamed milk for a smooth and <br> creamy coffee.</p> <br> <br><br>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card" style="width: 18rem; height: 22rem;">
+                    <img src="c:\Users\Ahmad computer sdk\Pictures\Screenshots\Screenshot 2026-09-04 101351.png" alt="" class="card" > <br>
+                    <h3 class="card-title"><b>Cappuccino</b></h3> 
+                    <p class="card-text">Made with our aromatic Espresso, <br> frothy milk and decadent chocolate <br> dusting.</p> <br> <br><br>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card" style="width: 18rem; height: 22rem;">
+                    <img src="c:\Users\Ahmad computer sdk\Pictures\Screenshots\Screenshot 2026-09-04 101310.png" alt="" class="card"> <br>
+                    <h3 class="card-title"><b>Flat White</b></h3> 
+                    <p class="card-text">A delicious combination of Espresso <br> and velvety milk, signed off with a <br> perfect Florette.</p> <br> <br><br>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card" style="width: 18rem; height: 22rem;">
+                    <img src="c:\Users\Ahmad computer sdk\Pictures\Screenshots\Screenshot 2026-09-04 101236.png" alt="" class="card"> <br>
+                    <h3 class="card-title"><b>Americano</b></h3> 
+                    <p class="card-text">Our signature Espresso softened with <br>hot water. Drink it straight up or add <br> a splash of milk.</p> <br> <br><br>
+                </div>
+            </div>
+        </div>
+
+        <br><br><br><br>
+
+        <!-- ROW 2 -->
+
+        <div class="row">
+            <div class="col-3">
+                <div class="card" style="width: 18rem; height: 25rem;">
+                    <img src="c:\Users\Ahmad computer sdk\Pictures\Screenshots\Screenshot 2026-09-04 101152.png" alt="" class="card" > <br>
+                    <h3 class="card-title"><b>Mocha</b></h3> 
+                    <p class="card-text">Expertly steamed chocolate milk <br> blended with espresso for a <br>caffeinated chocolate treat.</p> <br> <br><br>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card" style="width: 18rem; height: 25rem;">
+                    <img src="c:\Users\Ahmad computer sdk\Pictures\Screenshots\Screenshot 2026-09-04 101104.png" alt="" class="card" > <br>
+                    <h3 class="card-title"><b>Classic Cortado</b></h3> 
+                    <p class="card-text">Our signature Espresso and textured <br> milk, signed off with a little heart.</p> <br> <br><br>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card" style="width: 18rem; height: 25rem;">
+                    <img src="c:\Users\Ahmad computer sdk\Pictures\Screenshots\Screenshot 2026-09-04 100957.png" alt="" class="card"> <br>
+                    <h3 class="card-title"><b>Mocha Cortado</b></h3> 
+                    <p class="card-text">A short intense espresso combined <br>with textured chocolatey milk.</p> <br> <br><br>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card" style="width: 18rem; height: 25rem;">
+                    <img src="c:\Users\Ahmad computer sdk\Pictures\Screenshots\Screenshot 2026-09-04 100750.png" alt="" class="card" > <br>
+                    <h3 class="card-title"><b>Salted Caramel Cappuccino</b></h3> 
+                    <p class="card-text">Indulge in a rich and velvety <br>cappuccino infused with the perfect <br>balance of smooth caramel <br>sweetness and a touch of savoury <br> salt.</p> <br> <br><br>
+                </div>
+            </div>
+        </div>
+
+        <br><br><br><br>
+
+        <!-- ROW 3 -->
+
+        <div class="row">
+            <div class="col-3">
+                <div class="card" style="width: 18rem; height: 26rem;">
+                    <img src="c:\Users\Ahmad computer sdk\Pictures\Screenshots\Screenshot 2026-09-04 103104.png" alt="" class="card" > <br>
+                    <h3 class="card-title"><b>Espresso</b></h3> 
+                    <p class="card-text">Perfectly extracted, this short, <br> aromatic, intense drink contains all <br>the best flavours from our coffee <br> beans.</p> <br> <br><br>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card" style="width: 18rem; height: 26rem;">
+                    <img src="c:\Users\Ahmad computer sdk\Pictures\Screenshots\Screenshot 2026-09-04 103157.png" alt="" class="card" > <br>
+                    <h3 class="card-title"><b>Macchiato</b></h3>  
+                    <p class="card-text">A shot of Espresso with a touch of <br> steamed milk, this drink is for those <br> who like <br>their coffee mild. Simple and strong,<br> with a smooth finish.</p> <br> <br><br>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card" style="width: 18rem; height: 26rem;">
+                    <img src="c:\Users\Ahmad computer sdk\Pictures\Screenshots\Screenshot 2026-09-04 103258.png" alt="" class="card"> <br>
+                    <h3 class="card-title"><b>Ristretto</b></h3>  
+                    <p class="card-text">The little sibling to the Espresso. The <br>Ristretto is shorter than an <br> espresso (less water <br> but the same amount of coffee used) <br>but has an even bolder, fuller flavour <br> with less bitterness.</p> <br> <br><br>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card" style="width: 18rem; height: 26rem;">
+                    <img src="c:\Users\Ahmad computer sdk\Pictures\Screenshots\Screenshot 2026-09-04 103334.png" alt="" class="card" > <br>
+                    <h3 class="card-title"><b>White Hot Chocolate</b></h3>  
+                    <p class="card-text">Savor the heavenly blend of creamy <br> white chocolate in a comforting and <br> decadent white hot chocolate <br> experience.</p> <br> <br><br>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <br><br><br><br> <br><br>
+
+    <!-- HOT TEA SECTION -->
+
+    <section>
+
+        <div class="container">
+            <h1 align="center">Hot Tea</h1>
+            <br>
+
+            <!--ROW 1  -->
+
+            <div class="row">
+                <div class="col-4">
+                    <div class="card" style="width: 21rem; height: 22rem;">
+                    <img src="c:\Users\Ahmad computer sdk\Pictures\Screenshots\Screenshot 2026-09-04 105004.png" alt="" class="card"> <br>
+                    <h3 class="card-title"><b>Karak Tea with Milk</b></h3>  
+                    <p class="card-text">A bold and full-bodied tea, full of <br> flavour and perfect for brightening up <br>your day.</p> <br> <br><br>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card" style="width: 21rem; height: 22rem;">
+                    <img src="c:\Users\Ahmad computer sdk\Pictures\Screenshots\Screenshot 2026-09-04 105548.png" alt="" class="card"> <br>
+                    <h3 class="card-title"><b>Black Tea</b></h3>  
+                    <p class="card-text">A strong and flavorful tea made from <br>the leaves of the Camellia sinensis <br>plant.</p> <br> <br><br>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card" style="width: 21rem; height: 22rem;">
+                    <img src="c:\Users\Ahmad computer sdk\Pictures\Screenshots\Screenshot 2026-09-04 105637.png" alt="" class="card" height="300px"> <br>
+                    <h3 class="card-title"><b>Cardamom Tea with Milk</b></h3>  
+                    <p class="card-text">A warm and comforting tea made <br> with cardamom pods and milk, <br> perfect for any day.</p> <br> <br><br>
+                    </div>
+                </div>
+            </div>
+            <br><br><br>
+
+            <!-- Row 2 -->
+
+            <div class="row" align="center">
+
+                <div class="col-2"></div>
+
+                <div class="col-4">
+                    <div class="card" style="width: 21rem; height: 23rem;">
+                    <img src="c:\Users\Ahmad computer sdk\Pictures\Screenshots\Screenshot 2026-09-04 111319.png" alt="" class="card"> <br>
+                    <h3 class="card-title"><b>Green Tea</b></h3>  
+                    <p class="card-text">A wonderfully mellow steam-dried <br> green tea. So delicious and easy to <br> drink.</p> <br> <br><br>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card" style="width: 21rem; height: 23rem;">
+                    <img src="c:\Users\Ahmad computer sdk\Pictures\Screenshots\Screenshot 2026-09-04 105548.png" alt="" class="card"> <br>
+                    <h3 class="card-title"><b>Earl Grey English Breakfast Tea</b></h3>  
+                    <p class="card-text">A Chinese black tea blended with <br> the wonderfully citrusy flavour of <br> bergamot.</p> <br> <br><br>
+                    </div>
+                </div>
+
+                <div class="col-2"></div>
+            </div> 
+        </div>
+
+    </section>
+
+    <!-- FAPPERS SECTION -->
+
+    <section>
+
+        <br><br> <br><br>
+    <div class="container">
+        <br><br>
+        <h1 align="center">Frappes</h1> <br>
+
+        <!-- ROW 1 -->
+
+        <div class="row">
+            <div class="col-3">
+                <div class="card" style="width: 18rem; height: 25rem;">
+                    <img src="c:\Users\Ahmad computer sdk\Pictures\Screenshots\Screenshot 2026-09-04 163928.png" alt="" class="card"> <br> 
+                    <h3 class="card-title"><b>Mango ‘n Cream Frappe</b></h3>  
+                    <p class="card-text">Tropical island holiday in a Cup: A <br>refreshing and delicious frozen drink <br> made with mangoes, cream, and ice</p> <br> <br><br>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card" style="width: 18rem; height: 25rem;">
+                    <img src="c:\Users\Ahmad computer sdk\Pictures\Screenshots\Screenshot 2026-09-04 163841.png" alt="" class="card" > <br>
+                    <h3 class="card-title"><b>Strawberry Cream</b></h3>  
+                    <p class="card-text">A creamy drink with strawberry <b></b> sauce, topped with cream and <br>crunchy strawberry pieces.</p> <br> <br><br>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card" style="width: 18rem; height: 25rem;">
+                    <img src="c:\Users\Ahmad computer sdk\Pictures\Screenshots\Screenshot 2026-09-04 163748.png" alt="" class="card"> <br>
+                    <h3 class="card-title"><b>Caramel Crunch</b></h3> 
+                    <p class="card-text">A sweet and decadent frozen coffee <br> drink made with caramel syrup,<br> coffee, milk, and ice, and topped with <br> whipped cream, caramel drizzle, and <br>a crunchy caramel-sugar topping.</p> <br> <br><br>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card" style="width: 18rem; height: 25rem;">
+                    <img src="c:\Users\Ahmad computer sdk\Pictures\Screenshots\Screenshot 2026-09-04 163550.png" alt="" class="card"> <br>
+                    <h3 class="card-title"><b>Salted Caramel Frappe</b></h3>  
+                    <p class="card-text">A heavenly fusion of smooth coffee, <br> ice, and a tantalizing swirl of salted <br>caramel, delivering a blissful blend of <br> sweetness and chill in every sip.</p> <br> <br><br>
+                </div>
+            </div>
+        </div>
+
+        <br><br><br><br>
+
+        <!-- ROW 2 -->
+
+        <div class="row">
+            <div class="col-3">
+                <div class="card" style="width: 18rem; height: 27rem;">
+                    <img src="c:\Users\Ahmad computer sdk\Pictures\Screenshots\Screenshot 2026-09-04 113646.png" alt="" class="card" > <br>
+                    <h3 class="card-title"><b>Caramel Crunch (with coffee)</b></h3>  
+                    <p class="card-text">A sweet and decadent frozen coffee <br>drink made with caramel syrup, <br> coffee, milk, and ice, and topped with <br>whipped cream, caramel drizzle, and <br> a crunchy caramel-sugar topping, with coffee.</p> <br> <br><br>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card" style="width: 18rem; height: 27rem;">
+                    <img src="c:\Users\Ahmad computer sdk\Pictures\Screenshots\Screenshot 2026-09-04 113516.png" alt="" class="card" > <br>
+                    <h3 class="card-title"><b>Coffee Cream</b></h3>  
+                    <p class="card-text">Get your coffee fix in the form of a <br> creamy, milky, ice-cold frappé, with <br> cream and a sprinkle of chocolate <br> dusting</p> <br> <br><br>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card" style="width: 18rem; height: 27rem;">
+                    <img src="c:\Users\Ahmad computer sdk\Pictures\Screenshots\Screenshot 2026-09-04 113201.png" alt="" class="card"> <br>
+                    <h3 class="card-title"><b>Chocolate Fudge</b></h3>  
+                    <p class="card-text">A rich and decadent frozen coffee <br> drink made with chocolate syrup, <br> coffee, milk, and ice, and topped with <br> whipped cream and chocolate fudge <br>sauce.</p> <br> <br><br>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card" style="width: 18rem; height: 27rem;">
+                    <img src="c:\Users\Ahmad computer sdk\Pictures\Screenshots\Screenshot 2026-09-04 113201.png" alt="" class="card" > <br>
+                    <h3 class="card-title"><b>Chocolate Fudge(with coffee)</b></h3>  
+                    <p class="card-text">A rich and decadent frozen coffee <br> drink made with chocolate syrup, <br> coffee, milk, and ice, and topped with <br> whipped cream and chocolate fudge <br> sauce, with coffee.</p> <br> <br><br>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- COFFEE ON ICE SECTION -->
+
+    <section>
+        <br><br> <br><br>
+
+        <div class="container">
+            <br><br>
+            <h1 align="center">Coffee on ice</h1> <br>
+
+            <!-- ROW 1 -->
+
+            <div class="row">
+                <div class="col-4">
+                    <div class="card" style="width: 20rem; height: 22rem;">
+                    <img src="c:\Users\Ahmad computer sdk\Pictures\Screenshots\Screenshot 2026-09-04 172324.png" alt="" class="card"> <br> 
+                    <h3 class="card-title"><b>Iced Cappuccino</b></h3>  
+                    <p class="card-text">A bold and balanced coffee, made  <br>with freshly extracted espresso and <br>topped with whipped milk foam</p> <br> <br><br>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card" style="width: 20rem; height: 22rem;">
+                        <img src="c:\Users\Ahmad computer sdk\Pictures\Screenshots\Screenshot 2026-09-04 172424.png" alt="" class="card" > <br>
+                        <h3 class="card-title"><b>Iced Latte</b></h3>  
+                        <p class="card-text">Chilled milk over ice, capped with <br>freshly shaken espresso.</p> <br> <br><br>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card" style="width: 20rem; height: 22rem;">
+                        <img src="c:\Users\Ahmad computer sdk\Pictures\Screenshots\Screenshot 2026-09-04 172520.png" alt="" class="card"> <br>
+                        <h3 class="card-title"><b>Iced Americano</b></h3> 
+                        <p class="card-text">Classic black coffee gently <br> sweetened and served over ice.</p> <br> <br><br>
+                    </div>
+                </div>
+            </div>
+            <br><br><br>
+
+            <!-- ROW 2 -->
+
+            <div class="row">
+                <div class="col-3">
+                    <div class="card" style="width: 20rem; height: 24rem;">
+                        <img src="c:\Users\Ahmad computer sdk\Pictures\Screenshots\Screenshot 2026-09-04 180551.png" alt="" class="card"> <br>
+                        <h3 class="card-title"><b>Iced Flat White</b></h3> 
+                        <p class="card-text">The classic Flat White recreated in <br>cold. An intense espresso shot, <br> blended with milk and topped with <br>whipped milk foam.</p> <br> <br><br>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card" style="width: 20rem; height: 24rem;">
+                        <img src="c:\Users\Ahmad computer sdk\Pictures\Screenshots\Screenshot 2026-09-04 180633.png" alt="" class="card"> <br>
+                        <h3 class="card-title"><b>Signature Iced Chocolate</b></h3> 
+                        <p class="card-text">We only use the best cocoa for this <br> indulgent drink. Perfect for days when <br>you need a hug in a cup.</p> <br> <br><br>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card" style="width: 20rem; height: 24rem;">
+                        <img src="c:\Users\Ahmad computer sdk\Pictures\Screenshots\Screenshot 2026-09-04 180728.png" alt="" class="card"> <br>
+                        <h3 class="card-title"><b>Iced Mocha</b></h3> 
+                        <p class="card-text">A smooth and indulgent iced mocha, <br>chilled milk blended with hot <br>chocolate powder and espresso <br> poured over ice for a delicious <br> caffeinated chocolate treat.</p> <br> <br><br>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card" style="width: 20rem; height: 24rem;">
+                        <img src="c:\Users\Ahmad computer sdk\Pictures\Screenshots\Screenshot 2026-09-04 180821.png" alt="" class="card"> <br>
+                        <h3 class="card-title"><b>Iced Caramel Cappuccin</b></h3> 
+                        <p class="card-text">A refreshing and delicious coffee <br> drink made with espresso, cold milk, <br>and caramel syrup, topped with <br>whipped cream and caramel drizzle.</p> <br> <br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ICED TEAS SECTION -->
+
+    <section>
+
+        <br><br><br>
+
+        <div class="container">
+
+            <h1 align="center">Iced Teas</h1> <br>
+
+            <!-- ROW 1 -->
+
+            <div class="row">
+                <div class="col-4">
+                    <div class="card" style="width: 20rem; height: 22rem;">
+                    <img src="c:\Users\Ahmad computer sdk\Pictures\Screenshots\Screenshot 2026-09-04 181536.png" alt="" class="card"> <br> 
+                    <h3 class="card-title"><b>Strawberry Iced Tea</b></h3>  
+                    <p class="card-text">A refreshing and delicious iced tea <br>made with strawberries, tea, and <br> sugar.</p> <br> <br><br>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card" style="width: 20rem; height: 22rem;">
+                    <img src="c:\Users\Ahmad computer sdk\Pictures\Screenshots\Screenshot 2026-09-04 181617.png" alt="" class="card"> <br> 
+                    <h3 class="card-title"><b>Peach Iced Tea</b></h3>  
+                    <p class="card-text">A sweet and fruity iced tea made with <br> peaches, tea, and sugar.</p> <br> <br><br>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card" style="width: 20rem; height: 22rem;">
+                    <img src="c:\Users\Ahmad computer sdk\Pictures\Screenshots\Screenshot 2026-09-04 181655.png" alt="" class="card"> <br> 
+                    <h3 class="card-title"><b>Lemon and Mint Iced Tea</b></h3>  
+                    <p class="card-text">A tart and refreshing iced tea made with <br> lemons, mint, and tea.</p> <br> <br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<br><br><br><br><br>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-container">
+
+
+        <div class="footer-column">
+
+            <h5>
+                <b>Costa Coffee</b>
+            </h5> <br>
+
+            <a href="menu.html">
+                Our Coffees
+            </a>
+
+            <a href="#">
+                Help & Advice
+            </a>
+
+            <a href="#">
+                FAQs
+            </a>
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+            <h5>
+                <b>Dietary information</b>
+            </h5> <br>
+
+            <a href="#">
+               Detailed dietary  <br>information
+            </a>
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+            <h5>
+                <b>Sustainability</b>
+            </h5> <br>
+
+            <a href="locations.html">
+                Sustainability
+
+            </a>
+
+            <a href="order.html">
+                Costa Foundation
+            </a>
+
+            <a href="#">
+                Responsible Sourcing
+            </a>
+
+        </div>
+
+        <div>
+
+        </div>
+
+        <div></div>
+        <div></div>
+        <div></div>
+
+    </div>
+    </footer>
+
+    <footer class="footer-container1">
+
+
+    <div class="copyright">
+        <div class="copyright-column">
+        <a href="#">
+            Policies and term of use
+        </a> 
+        <br><br>
+
+        © 2026 Urban Brew Coffee.
+        All Rights Reserved.
+
+        <br><br> <br><br>
+
+</footer>
+
+</body>
+</html>

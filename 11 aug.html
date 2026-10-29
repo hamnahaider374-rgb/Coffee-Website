@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chunk N Cheese</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+
+/* TOP BAR */
+
+.top-bar {
+    height: 45px;
+
+    background-color: #fff0df;
+
+    text-align: center;
+
+    padding: 13px;
+
+    font-weight: bold;
+
+    color: #333;
+}
+
+
+/* HEADER */
+
+header {
+    height: 110px;
+
+    background-color: #07195c;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-around;
+}
+
+
+.delivery,
+.support,
+.login {
+    font-size: 14px;
+
+    line-height: 25px;
+}
+
+
+.logo {
+    text-align: center;
+
+    font-size: 25px;
+
+    font-weight: bold;
+}
+
+
+/* NAVIGATION */
+
+nav {
+    height: 75px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    background-color: white;
+}
+
+
+nav a {
+    text-decoration: none;
+
+    color: #333;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    text-align: center;
+}
+
+
+nav a:hover {
+    color: orange;
+}
+
+
+/* SEARCH */
+
+.search {
+    text-align: center;
+
+    padding: 20px;
+
+    border-top: 1px solid #ddd;
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+.search input {
+    width: 500px;
+
+    padding: 14px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    font-size: 15px;
+}
+
+
+.search button {
+    padding: 14px 20px;
+
+    background-color: #07195c;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+
+.search button:hover {
+    background-color: orange;
+}
+
+
+/* CATEGORY SECTION */
+
+.categories {
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+
+.categories h1 {
+    font-size: 35px;
+
+    margin-bottom: 30px;
+}
+
+
+.category-container {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 25px;
+}
+
+
+.category {
+    width: 130px;
+
+    text-align: center;
+}
+
+
+.category img {
+    width: 110px;
+
+    height: 110px;
+
+    object-fit: cover;
+
+    background-color: #07195c;
+
+    border-radius: 5px;
+}
+
+
+.category p {
+    margin-top: 10px;
+
+    font-size: 13px;
+}
+
+
+.category:hover {
+    transform: translateY(-5px);
+}
+
+
+.category.active {
+    border: 2px solid #ddd;
+
+    padding: 8px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px #ccc;
+}
+
+
+.arrow {
+    border: none;
+
+    background: none;
+
+    font-size: 40px;
+
+    cursor: pointer;
+}
+
+
+.arrow:hover {
+    color: orange;
+}
+
+
+/* BIG BANNER */
+
+.banner {
+    height: 450px;
+
+    background-color: #07195c;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-around;
+
+    color: white;
+
+    padding: 30px;
+}
+
+
+.banner-image img {
+    width: 400px;
+
+    height: 350px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+}
+
+
+.banner-text {
+    text-align: left;
+}
+
+
+.price {
+    background-color: orange;
+
+    padding: 15px 25px;
+
+    border-radius: 15px;
+
+    font-size: 35px;
+
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+
+.banner-text h2 {
+    font-size: 17px;
+
+    margin: 12px;
+}
+
+
+.extreme {
+    text-align: center;
+}
+
+
+.extreme h1 {
+    color: orange;
+
+    font-size: 45px;
+
+    margin: 5px;
+}
+
+
+/* PRODUCTS */
+
+.products {
+    padding: 50px;
+
+    text-align: center;
+}
+
+
+.products h1 {
+    margin-bottom: 30px;
+}
+
+
+.product-container {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+}
+
+
+.product {
+    width: 250px;
+
+    padding: 15px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    box-shadow: 0 2px 8px #ddd;
+}
+
+
+.product img {
+    width: 100%;
+
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+}
+
+
+.product h2 {
+    margin: 10px;
+}
+
+
+.product p {
+    color: #666;
+
+    margin-bottom: 10px;
+}
+
+
+.product b {
+    display: block;
+
+    margin: 10px;
+
+    color: #07195c;
+}
+
+
+.product button {
+    background-color: #07195c;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 20px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+
+.product button:hover {
+    background-color: orange;
+}
+</style>
+<body>
+
+    <!-- TOP BAR -->
+
+    <div class="top-bar">
+        ⭐ WE'RE HERE TO CHEESIFY YOUR WHOLE CHUNKIN' LIFE! ⭐
+    </div>
+
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="delivery">
+            📍 <b>Delivery to</b>
+            <br>
+            Al Barkat Villas, Faisalabad
+        </div>
+
+
+        <div class="support">
+            ☎ <b>Call for Support</b>
+            <br>
+            041-111-555-786
+        </div>
+
+
+        <div class="logo">
+            CHUNK
+            <br>
+            <b>N CHEESE</b>
+        </div>
+
+
+        <div class="login">
+            🛍️ Sign In / Register
+        </div>
+
+    </header>
+
+
+    <!-- NAVIGATION -->
+
+    <nav>
+
+        <a href="#">EXTREME<br>FLAVOURS</a>
+
+        <a href="#">APPETIZERS</a>
+
+        <a href="#">ROLLS & WINGS</a>
+
+        <a href="#">PIZZA</a>
+
+        <a href="#">SIGNATURE<br>PIZZA</a>
+
+        <a href="#">FAVOURITE<br>BURGERS</a>
+
+        <a href="#">COMBO<br>BOXES</a>
+
+        <a href="#">CHUNKY<br>LOVE</a>
+
+        <a href="#">DEALS</a>
+
+        <a href="#">SALAD &<br>SANDWICH</a>
+
+    </nav>
+
+
+    <!-- SEARCH -->
+
+    <div class="search">
+
+        <input type="text" placeholder="Search for food...">
+
+        <button>🔍 Search</button>
+
+    </div>
+
+
+    <!-- CATEGORY SECTION -->
+
+    <section class="categories">
+
+        <h1>Section Names</h1>
+
+
+        <div class="category-container">
+
+            <button class="arrow">‹</button>
+
+
+            <div class="category active">
+
+                <img src="https://g-cdn.blinkco.io/ordering-system/55485/section_image/1782116467596.png">
+
+                <p>Extreme<br>Flavours</p>
+
+            </div>
+
+
+            <div class="category">
+
+                <img src="https://g-cdn.blinkco.io/ordering-system/55485/section_image/1780378613945.jpeg">
+
+                <p>Appetizers</p>
+
+            </div>
+
+
+            <div class="category">
+
+                <img src="https://g-cdn.blinkco.io/ordering-system/55485/section_image/1780378443959.jpeg">
+
+                <p>Rolls & Wings</p>
+
+            </div>
+
+
+            <div class="category">
+
+                <img src="https://g-cdn.blinkco.io/ordering-system/55485/section_image/1782116541431.png">
+
+                <p>Pizza</p>
+
+            </div>
+
+
+            <div class="category">
+
+                <img src="https://g-cdn.blinkco.io/ordering-system/55485/section_image/1780378334311.jpeg">
+
+                <p>Burgers</p>
+
+            </div>
+
+
+            <div class="category">
+
+                <img src="https://g-cdn.blinkco.io/ordering-system/55485/section_image/1780380538541.jpeg">
+
+                <p>Deals</p>
+
+            </div>
+
+
+            <button class="arrow">›</button>
+
+        </div>
+
+    </section>
+
+
+    <!-- BIG BANNER -->
+
+    <section class="banner">
+
+        <div class="banner-image">
+
+            <img src="deal.jpg">
+
+        </div>
+
+
+        <div class="banner-text">
+
+            <div class="price">
+                RS. 1690
+            </div>
+
+            <h2>2x BURGERS</h2>
+
+            <h2>6x BREADED SAUCY WINGS</h2>
+
+            <h2>1x DIP</h2>
+
+            <h2>2x REG DRINKS</h2>
+
+        </div>
+
+
+        <div class="extreme">
+
+            <h1>CHUNKY</h1>
+
+            <h1>EXTREME</h1>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRODUCTS -->
+
+    <section class="products">
+
+        <h1>Explore Our Delicious Food</h1>
+
+
+        <div class="product-container">
+
+
+            <div class="product">
+
+                <img src="burger.jpg">
+
+                <h2>Chicken Burger</h2>
+
+                <p>Juicy chicken burger with cheese</p>
+
+                <b>Rs. 599</b>
+
+                <button>Add to Cart</button>
+
+            </div>
+
+
+            <div class="product">
+
+                <img src="pizza.jpg">
+
+                <h2>Cheesy Pizza</h2>
+
+                <p>Loaded with delicious cheese</p>
+
+                <b>Rs. 899</b>
+
+                <button>Add to Cart</button>
+
+            </div>
+
+
+            <div class="product">
+
+                <img src="fries.jpg">
+
+                <h2>Loaded Fries</h2>
+
+                <p>Crispy fries with special sauce</p>
+
+                <b>Rs. 399</b>
+
+                <button>Add to Cart</button>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+</body>
+
+</html>

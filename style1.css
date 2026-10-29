@@ -1,0 +1,167 @@
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body */
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    background-color: rgb(176, 173, 168);
+}
+
+/* Navbar */
+
+nav{
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding: 25px 75px;
+
+    z-index:100;
+
+}
+
+.logo{
+
+    font-family:'Playfair Display',serif;
+
+    color:white;
+
+    font-size:35px;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+}
+
+nav ul li{
+
+    margin-left:35px;
+
+}
+
+nav ul li a{
+
+    text-decoration:none;
+
+    color:white;
+
+    font-size:17px;
+
+    transition:.3s;
+
+}
+
+nav ul li a:hover{
+
+    color:#d4b28c;
+
+}
+
+/* Hero Section */
+
+.hero{
+
+    height:100vh;
+
+    background-image:url(https://i.pinimg.com/736x/41/c8/6b/41c86bbc4a11e0b4949a65adca114c37.jpg);
+
+    background-size:cover;
+
+    background-position:center;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+/* Dark Overlay */
+
+.overlay{
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,.45);
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.overlay h1{
+
+    color:white;
+
+    font-size:75px;
+
+    font-family:'Playfair Display',serif;
+
+}
+
+.overlay p{
+
+    color:white;
+
+    font-size:22px;
+
+    margin-top:15px;
+
+}
+
+.btn{
+
+    margin-top:35px;
+
+    text-decoration:none;
+
+    color:white;
+
+    background:#A47148;
+
+    padding:15px 40px;
+
+    border-radius:40px;
+
+    transition:.4s;
+
+    font-size:18px;
+
+}
+
+.btn:hover{
+
+    background:#6F4E37;
+
+}

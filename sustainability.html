@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    <title>Sustainability | Costa Coffee</title>
+</head>
+
+<style>
+
+    /* ================= GENERAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    color: #6b1a34;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3GpYLh3pWMk9q2I0d3DTigwGxhLYXmWgaMCVG-_LHVExTCBFNj5Gq1Kuk&s=10");
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+
+    height: 80px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    background-color: white;
+
+
+}
+
+
+.logo a{
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+    color: #6b351f;
+
+    text-decoration: none;
+}
+
+
+.nav-links {
+
+    display: flex;
+
+    gap: 30px;
+
+    list-style: none;
+}
+
+
+.nav-links a {
+
+    text-decoration: none;
+
+    color: #3b2116;
+
+    font-size: 15px;
+
+    font-weight: bold;
+}
+
+
+.nav-links a:hover {
+
+    color: #9a5735;
+}
+
+/* Head section */
+
+.app-section {
+
+    display: flex;
+
+    align-items: center;
+
+    background-color: rgb(249, 138, 149);
+}
+
+
+.app-text {
+
+    width: 50%;
+
+    padding-right: 50px;
+
+    padding-left: 10px;
+}
+
+
+.app-image {
+
+    width: 50%;
+    height: 400px;
+}
+
+
+.app-image img {
+
+    width: 100%;
+
+    height: 400px;
+
+    object-fit: cover;
+}
+
+
+.app-text h1 {
+    margin-top: 50px;
+    padding: 20px;
+
+    font-size: 45px;
+  
+    margin-left: 70px;
+
+    font-weight: bolder;
+}
+
+
+.app-text p {
+
+    margin-bottom: 25px;
+    margin-left: 80px;
+    font-size: 19px;
+}
+.box{
+    background-color: #ac0844;
+    color: white;
+    padding: 18px;
+    font-size: 20px;
+    gap: 20px;
+}
+.box a{
+    color: white;
+    text-decoration: none;
+    justify-content:space-between;
+    gap: 30px;
+}  
+
+/* ================= NUTRITION ================= */
+
+.coffee-section {
+
+    height: 500px;
+
+    display: flex;
+
+    align-items: center;
+
+    background-color: #a5dcf1e6;
+
+    text-align: center;
+}
+
+
+.coffee-image {
+
+    width: 50%;
+}
+
+
+.coffee-image img {
+
+    width: 100%;
+
+    height: 500px;
+
+    object-fit: cover;
+}
+
+
+.coffee-text {
+
+    width: 50%;
+
+    padding: 70px;
+}
+
+
+.coffee-text h2 {
+
+    font-size: 42px;
+    font-weight: bolder;
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+}
+
+
+.coffee-text p {
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+}
+
+/* ================= SUSTAINABILITY ================= */
+.sustainability {
+
+    display: flex;
+
+    align-items: center;
+    text-align: center;
+
+    background-color: #c27ea8f2;
+}
+
+
+.sustainability-image {
+
+    width: 50%;
+}
+
+
+.sustainability-image img {
+
+    width: 100%;
+
+    height: 450px;
+
+    object-fit: cover;
+}
+
+
+.sustainability-text {
+
+    width: 50%;
+
+    padding: 70px;
+}
+
+
+.sustainability-text h2 {
+
+    font-size: 40px;
+    font-weight: bolder;
+
+    margin-bottom: 20px;
+}
+
+
+.sustainability-text p {
+
+    line-height: 1.7;
+
+    margin-bottom: 15px;
+}
+
+
+
+/* ================= BUTTON ================= */
+
+.button {
+
+    display: inline-block;
+
+    padding: 14px 28px;
+
+    background-color: #591932;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 25px;
+
+    font-weight: bold;
+
+    padding: 20px;
+
+    font-size: 20px;
+
+}
+
+.button a{
+    align-items: center;
+}
+
+.button:hover {
+
+    background-color: #8b2234;
+}
+
+.appe-section {
+
+    display: flex;
+
+    align-items: center;
+
+    text-align: center;
+    background-color: rgb(249, 138, 149);
+}
+
+
+.appe-text {
+
+    width: 50%;
+
+    padding-right: 50px;
+
+    padding-left: 10px;
+}
+
+
+.appe-image {
+
+    width: 50%;
+    height: 450px;
+}
+
+
+.appe-image img {
+
+    width: 100%;
+
+    height: 450px;
+
+    object-fit: cover;
+}
+
+
+.appe-text h1 {
+    margin-top: 50px;
+    padding: 20px;
+
+    font-size: 45px;
+  
+    margin-left: 70px;
+
+    font-weight: bolder;
+}
+
+
+.appe-text p {
+
+    margin-bottom: 25px;
+    margin-left: 80px;
+    font-size: 19px;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+
+    background-color: #28160e;
+
+    color: white;
+
+    padding: 60px 8% 20px;
+    background-color: #ac0844;
+    font-size: 18px;
+}
+
+
+.footer-container {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 50px;
+}
+
+
+.footer-column {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+.footer-column h3 {
+
+    margin-bottom: 10px;
+}
+
+
+.footer-column a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+}
+
+
+.footer-column a:hover {
+
+    color: white;
+}
+
+.footer-container1{
+    background-color: #6b1a34;
+}
+
+.copyright {
+
+    color: white;
+    font-weight: bold;
+}
+
+.copyright-column a{
+    color: white;
+
+    text-decoration: none;
+
+}
+</style>
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <a href="First webpage.html">Costa Coffee</a>
+        </div>
+
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="our story.html">Our story</a>
+            </li>
+
+            <li>
+                <a href="our menu.html">Our Menu</a>
+            </li>
+
+            <li>
+                <a href="locations.html">Find a Cafe</a>
+            </li>
+
+            <li>
+                <a href="order.html">Order Online</a>
+            </li>
+
+            <li>
+                <a href="sustainability.html">
+                    Sustainability
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<section class="app-section">
+
+    <div class="app-text">
+
+        <h1>
+           Sustainability
+        </h1>
+
+        <p>
+           Our sustainability strategy, called Coffee with <br>Commitment, aims to craft more sustainable coffee <br> — from crop to cup. Our focus is on all three pillars: <br> our people, our coffee and our planet.
+        </p>
+
+    </div>
+
+
+    <div class="app-image">
+
+        <img src="https://i.pinimg.com/1200x/04/32/f5/0432f56bd2ff23e4d1b4d9a711bfd771.jpg"
+             alt="Coffee ordering app">
+
+    </div>
+
+</section>
+
+<!-- nav section -->
+
+<div class="box">
+
+    <div class="row">
+        
+        <div class="col-2"></div>
+        <div class="col-3"><a href="#one">Nutrition and wellbeing</a></div>
+        <div class="col-3"><a href="#two">Costa Foundation</a></div>
+        <div class="col-3"><a href="#three">Responsible Sourcing</a></div>
+        <div class="col-1"></div>
+
+    </div>
+</div>
+<br><br> <br>
+
+<!-- HISTORY SECTION -->
+
+
+<section class="coffee-section" id="one">
+
+    <div class="coffee-image">
+            <img src="https://images.ctfassets.net/nywvawxhh22w/4SDokEWyDWkLrC6GbJRs6V/d473614a23b394ae017ce9759d041f75/Nutrition-and-wellbeing-Sub-Images_Desktop-696x512-v31.jpg?w=696&h=512&q=100&fm=webp"
+             alt="Freshly brewed coffee">
+        </div>
+
+
+    <div class="coffee-text">
+
+        <h2>
+            Nutrition and wellbeing
+        </h2>
+
+        <p>
+            Coffee is important to us, but so is the health <br>and wellbeing of our customers. Whether it’s <br> checking your ingredients for allergens, <br> making our latte lighter, or improving our range <br> of vegan offerings, we’ve got your cravings <br>covered.
+
+        </p>
+
+        <a href="menu.html" class="button">
+            Learn more  ›
+        </a>
+
+    </div>
+
+</section>
+<br><br><br>
+
+<!-- Foundation SECTION -->
+
+
+<section class="sustainability" id="two">
+
+
+    <div class="sustainability-text">
+
+        <h2>
+            Costa Foundation
+        </h2>
+
+        <p>
+            We believe that education is the first step <br> towards a better life and through our charity, <br> the Costa foundation, we aim to improve <br>schools within some of the world’s most <br> remote coffee-growing communities.
+
+        </p>
+
+        <a href="" class="button">
+            Learn more  ›
+        </a>
+
+    </div>
+
+     <div class="sustainability-image">
+        <img src="https://images.ctfassets.net/nywvawxhh22w/3eeCiQoqmws78sZEgnwlXK/e91e1ada6640549d9031592d49d646a4/CC_Behind-the-beans_Foundation_SecondaryImage_696x512.jpg?w=696&h=512&q=100&fm=webp"
+        alt="Freshly brewed coffee">
+    </div>
+
+</section>
+<br><br><br>
+
+<!-- ================= APP SECTION ================= -->
+
+<section class="appe-section" id="three">
+
+    <div class="appe-image">
+
+        <img src="https://images.ctfassets.net/nywvawxhh22w/12kBXo0rfgCO1fqyWszLpJ/c5c68b5c59b36699c7768d4e350661f6/CC_Behind-the-beans_Sustainability_SecondaryImage_696x512.jpg?w=696&h=512&q=100&fm=webp"
+             alt="Coffee ordering app">
+
+    </div>
+
+    <div class="appe-text">
+
+        <h2>
+           Responsible Sourcing
+        </h2>
+
+        <p>
+           To keep inspiring the world to love great <br> coffee, we must respect the planet and ensure <br> we reduce our environmental footprint, at <br> every step. We don’t just make great tasting <br> we also source it responsibly.
+
+        </p>
+
+        <div class="appe-buttons">
+
+            <a href="#" class="button">
+                Responsible Sourcing  ›
+            </a>
+            <br><br>
+
+        </div>
+
+    </div>
+
+
+</section>
+<br><br><br><br>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-container">
+
+
+        <div class="footer-column">
+
+            <h5>
+                <b>Costa Coffee</b>
+            </h5> <br>
+
+            <a href="menu.html">
+                Our Coffees
+            </a>
+
+            <a href="#">
+                Help & Advice
+            </a>
+
+            <a href="#">
+                FAQs
+            </a>
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+            <h5>
+                <b>Dietary information</b>
+            </h5> <br>
+
+            <a href="#">
+               Detailed dietary  <br>information
+            </a>
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+            <h5>
+                <b>Sustainability</b>
+            </h5> <br>
+
+            <a href="locations.html">
+                Sustainability
+
+            </a>
+
+            <a href="order.html">
+                Costa Foundation
+            </a>
+
+            <a href="#">
+                Responsible Sourcing
+            </a>
+
+        </div>
+
+        <div>
+
+        </div>
+
+        <div></div>
+        <div></div>
+        <div></div>
+
+    </div>
+    </footer>
+
+    <footer class="footer-container1">
+
+
+    <div class="copyright">
+        <div class="copyright-column">
+        <a href="#">
+            Policies and term of use
+        </a> 
+        <br><br>
+
+        © 2026 Urban Brew Coffee.
+        All Rights Reserved.
+
+        <br><br> <br><br>
+
+</footer>
+    
+</body>
+</html>

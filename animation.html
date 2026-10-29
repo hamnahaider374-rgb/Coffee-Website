@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Animation</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: white;
+        }
+
+        /* MAIN AREA */
+
+        .animation {
+            width: 100%;
+            height: 500px;
+            position: relative;
+            overflow: hidden;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background: white;
+        }
+
+
+        /* =========================
+           WEB DESIGN TEXT
+        ========================= */
+
+        .criterion {
+            position: relative;
+            z-index: 10;
+
+            display: flex;
+            gap: 5px;
+
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text {
+            width: 18px;
+            height: 20px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-family: Arial, sans-serif;
+            font-size: 10px;
+            font-weight: bold;
+
+            animation: text 7s infinite;
+        }
+
+
+        /* LETTER COLORS */
+
+        .text1 {
+            background: #f6b6b6;
+            animation-delay: 0s;
+        }
+
+        .text2 {
+            background: #b8e6a8;
+            animation-delay: .1s;
+        }
+
+        .text3 {
+            background: #8ee8dc;
+            animation-delay: .2s;
+        }
+
+        .text4 {
+            background: #c99be8;
+            animation-delay: .3s;
+        }
+
+        .text5 {
+            background: #e69bd4;
+            animation-delay: .4s;
+        }
+
+        .text6 {
+            background: #e9b8df;
+            animation-delay: .5s;
+        }
+
+        .text7 {
+            background: #f5c77b;
+            animation-delay: .6s;
+        }
+
+        .text8 {
+            background: #f4e36d;
+            animation-delay: .7s;
+        }
+
+        .text9 {
+            background: #a9dfe8;
+            animation-delay: .8s;
+        }
+
+
+        /* =========================
+           COLORED BARS
+        ========================= */
+
+        .bars {
+            position: absolute;
+            left: 0;
+            top: 0;
+
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+
+            z-index: 5;
+        }
+
+        .bar {
+            height: 100%;
+            flex: 1;
+
+            transform: translateX(-100%);
+            animation: bars 7s infinite;
+        }
+
+
+        .bar1 {
+            background: #8bea00;
+            animation-delay: 0s;
+        }
+
+        .bar2 {
+            background: #a4ed19;
+            animation-delay: .15s;
+        }
+
+        .bar3 {
+            background: #3bd879;
+            animation-delay: .30s;
+        }
+
+        .bar4 {
+            background: #35d6d0;
+            animation-delay: .45s;
+        }
+
+        .bar5 {
+            background: #16c9e8;
+            animation-delay: .60s;
+        }
+
+        .bar6 {
+            background: #2682e8;
+            animation-delay: .75s;
+        }
+
+        .bar7 {
+            background: #3d4ee8;
+            animation-delay: .90s;
+        }
+
+        .bar8 {
+            background: #5723d8;
+            animation-delay: 1.05s;
+        }
+
+
+        /* =========================
+           TEXT ANIMATION
+        ========================= */
+
+        @keyframes text {
+
+            /* FIRST IMAGE - GLOW */
+            0% {
+                box-shadow:
+                    0 0 15px 8px rgba(150, 255, 0, .4);
+                filter: blur(1px);
+            }
+
+            /* GLOW STARTS DISAPPEARING */
+            15% {
+                box-shadow:
+                    0 0 8px 3px rgba(150, 255, 0, .2);
+                filter: blur(.3px);
+            }
+
+            /* SECOND IMAGE - CLEAR BOXES */
+            25% {
+                box-shadow: none;
+                filter: blur(0);
+            }
+
+            /* STAY CLEAR */
+            40% {
+                box-shadow: none;
+                filter: blur(0);
+            }
+
+            /* BARS COVER SCREEN */
+            55% {
+                background: transparent;
+                box-shadow: none;
+            }
+
+            85% {
+                background: transparent;
+                box-shadow: none;
+            }
+
+            /* RESET */
+            100% {
+                background: transparent;
+            }
+        }
+
+
+        /* =========================
+           BAR ANIMATION
+        ========================= */
+
+        @keyframes bars {
+
+            /* WAIT */
+            0% {
+                transform: translateX(-100%);
+            }
+
+            40% {
+                transform: translateX(-100%);
+            }
+
+            /* ENTER FROM LEFT */
+            50% {
+                transform: translateX(0);
+            }
+
+            /* FULL SCREEN */
+            75% {
+                transform: translateX(0);
+            }
+
+            /* RESET */
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <div class="animation">
+
+        <!-- COLORED BARS -->
+
+        <div class="bars">
+
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+            <div class="bar bar4"></div>
+            <div class="bar bar5"></div>
+            <div class="bar bar6"></div>
+            <div class="bar bar7"></div>
+            <div class="bar bar8"></div>
+
+        </div>
+
+
+        <!-- WEB DESIGN -->
+
+        <div class="criterion">
+
+            <div class="text text1"><b>W</b></div>
+            <div class="text text2"><b>E</b></div>
+            <div class="text text3"><b>B</b></div>
+            <div class="text text4"><b>D</b></div>
+            <div class="text text5"><b>E</b></div>
+            <div class="text text6"><b>S</b></div>
+            <div class="text text7"><b>I</b></div>
+            <div class="text text8"><b>G</b></div>
+            <div class="text text9"><b>N</b></div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
